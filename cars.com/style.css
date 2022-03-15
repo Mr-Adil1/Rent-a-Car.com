@@ -799,6 +799,7 @@ header {
         position: fixed;
         left: 0;
         padding: 8px 20px;
+        width: 400px;
     }
 }
 
