@@ -795,10 +795,9 @@ header {
     .services-container {
         grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     }
-    .header {
+    header {
         position: fixed;
         padding: 8px 20px;
-        width: 200px;
     }
 }
 
@@ -809,7 +808,7 @@ header {
     header {
         padding: 6px 14px;
     }
-    .header {
+    header {
         position: fixed;
     }
 }
