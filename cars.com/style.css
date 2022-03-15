@@ -798,6 +798,7 @@ header {
     .header {
         position: fixed;
         padding: 8px 20px;
+        width: 200px;
     }
 }
 
