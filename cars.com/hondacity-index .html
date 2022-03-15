@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent-a-Car honda-city</title>
+    <link rel="stylesheet" href="style.css">
+    <!----boxicon css---->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+
+        <div class="bx bx-menu" id="menu-icon" onclick="dropeFunction()"></div>
+        <!------navbar---->
+        <div class="navbar">
+            <ul>
+                <li><a href="#home" id="nava">HOME</a></li>
+                <li><a href="#ride" id="nava">RIDES</a></li>
+                <li><a href="#services" id="nava">SERVICES</a></li>
+                <li><a href="#about" id="nava">ABOUT</a></li>
+                <li><a href="#reviews" id="nava">REVIEWS</a></li>
+            </ul>
+            <div class="dropdown">
+                <li class="drop-btn"><a href="#">Collection <i class="bx bx-chevron-down-circle" id="down" onclick="dropFunction()"></i><i class="bx bx-chevron-up-circle" id="up" onclick="closeFunction()" style="display: none;"></i> </a></li>
+                <div class="dropdown-content" id="dropdowncontent">
+                    <ul>
+                        <a href="index.html">Honda Civic</a>
+                        <a href="hondacity-index .html">Honda City</a>
+                        <a href="index-honda-brv - Copy.html">Honda BRV</a>
+                        <a href="crv -index.html">Honda CRV</a>
+                        <a href="vezel-index.html">Honda Vizel</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-btn">
+            <a href="#" class="sign-up"><i class="bx bx-user" style="font-size: 24px;"></i> Sign in</a>
+        </div>
+    </header>
+    <!-----Home---->
+    <section class="city-home home" id="home">
+        <div class="text">
+            <h1><span>Looking</span> for <br>Rent a car</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit <br> Ratione, laborum eum?</p>
+            <div class="appstor">
+                <img src="images/appstore.png" alt="">
+                <img src="images/google-play.jpg" alt="">
+            </div>
+        </div>
+        <div class="order-form">
+            <form action="">
+                <div class="input-box">
+                    <span>Location</span>
+                    <input type="search" name="" id="" placeholder="Search Place">
+                </div>
+                <div class="input-box">
+                    <span>Pic-Up Date</span>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="input-box">
+                    <span>Return Date</span>
+                    <input type="date" name="" id="">
+                </div>
+                <input type="submit" name="" id="" value="Submit" class="submit-btn">
+            </form>
+        </div>
+    </section>
+
+    <!-----ride section----->
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>How Its Work</span>
+            <h1>Rent With 3 Easy Steps</h1>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <i class="bx bx-map"></i>
+                <h2>Choose A Location</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, autem consectetur? Repudiandae provident consequuntur quaerat.</p>
+            </div>
+            <div class="box">
+                <i class="bx bx-calendar-check"></i>
+                <h2>Pic-Up Date</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, autem consectetur? Repudiandae provident consequuntur quaerat.</p>
+            </div>
+            <div class="box">
+                <i class="bx bxs-calendar-star"></i>
+                <h2>Book A Car</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, autem consectetur? Repudiandae provident consequuntur quaerat.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!----services------>
+
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Best Services</span>
+            <h1>Explore Out top Deals <br> From Top Rated Dealers</h1>
+        </div>
+        <div class="section-img">
+            <img src="images/citybackground.png" style="width: 100%;" alt="">
+        </div>
+        <div class="services-container">
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/city1.jpg" alt="">
+                </div>
+                <p>2019</p>
+                <h3>2019 Honda City</h3>
+                <h2>$58500 | $399 <span>Month</span></h2>
+                <a href="#" class="btn">Book NOw</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/city2.jpg" alt="">
+                </div>
+                <p>2019</p>
+                <h3>2019 Honda City</h3>
+                <h2>$58500 | $399 <span>Month</span></h2>
+                <a href="#" class="btn">Book NOw</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/city3.jpg" alt="">
+                </div>
+                <p>2019</p>
+                <h3>2019 Honda City</h3>
+                <h2>$58500 | $399 <span>Month</span></h2>
+                <a href="#" class="btn">Book NOw</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/city4.jpg" alt="">
+                </div>
+                <p>2019</p>
+                <h3>2019 Honda City</h3>
+                <h2>$58500 | $399 <span>Month</span></h2>
+                <a href="#" class="btn">Book NOw</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                </div>
+                <p>2019</p>
+                <h3>2019 Honda City</h3>
+                <h2>$58500 | $399 <span>Month</span></h2>
+                <a href="#" class="btn">Book NOw</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2r-X0C__L0TWTl2ZQdUxQozVNJSfjLIvNXA&usqp=CAU" alt="">
+                </div>
+                <p>2019</p>
+                <h3>2019 Honda City</h3>
+                <h2>$58500 | $399 <span>Month</span></h2>
+                <a href="#" class="btn">Book NOw</a>
+            </div>
+        </div>
+    </section>
+
+    <!----about----->
+
+    <section class="about" id="about">
+        <div class="heading">
+            <span>About</span>
+            <h1>Best Customer Experience</h1>
+        </div>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="https://www.autobics.com/wp-content/uploads/2017/02/Honda-City-2017-Golden-Brown-Metallic-.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <span>About Us</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aspernatur dolor voluptate culpa fuga blanditiis placeat qui possimus quidem. Et corporis numquam, molestiae neque velit necessitatibus. Est dolorum, ipsa odio corporis fuga
+                    amet soluta.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas asperiores incidunt ducimus doloremque corporis et minima ipsum.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>>
+
+    <!------reviews----->
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <span>Reviews</span>
+            <h1>What Our Customers Say</h1>
+        </div>
+        <div class="reviews-container">
+            <div class="box">
+                <div class="review-img">
+                    <img src="images/user1.jpg" alt="">
+                </div>
+                <h2>Miss Julie</h2>
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga, harum voluptas aliquid ipsam illo amet delectus nulla!</p>
+            </div>
+
+            <div class="box">
+                <div class="review-img">
+                    <img src="images/user2.jpg" alt="">
+                </div>
+                <h2>Mrs David</h2>
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga, harum voluptas aliquid ipsam illo amet delectus nulla!</p>
+            </div>
+
+            <div class="box">
+                <div class="review-img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="">
+                </div>
+                <h2>Mr Jhone</h2>
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga, harum voluptas aliquid ipsam illo amet delectus nulla!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-----news letter------>
+    <section class="news-letter">
+        <h2>Subscribe To Newsletter</h2>
+        <div class="box">
+            <input type="text" id="email" placeholder="Enter Your Email..">
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>&#169; Pk.Devolpers</p>
+        <div class="social-links">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-skype"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </div>
+    <!------scrolar revel-------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!---link to js--->
+    <script src="main.js"></script>
+</body>
+
+</html>

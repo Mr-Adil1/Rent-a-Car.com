@@ -1,0 +1,815 @@
+/*::links
+Icons: https://boxicons.com,
+Fonts: https://fonts.google.com/,
+ScrollReveal: https://scrollrevealjs.org/
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: #fe5b3d;
+    --second-color: #ffac38;
+    --text-color: #444;
+    --navlinks-color: #fff;
+    --gradient: linear-gradient(#fe5b3d, #ffac38);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/*coustem scroll bar*/
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgba(4, 9, 30, 0.9);
+    border-radius: 5rem;
+}
+
+#preloader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #000 url(images/loader.gif) no-repeat center center;
+    z-index: 1006;
+}
+
+section {
+    padding: 50px 100px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 10vh;
+    z-index: 1000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px 100px;
+    background: rgba(4, 9, 30, 1);
+}
+
+.logo img {
+    width: 39px;
+}
+
+.navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+}
+
+.navbar li {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar a,
+.header-btn a {
+    font-size: 1rem;
+    color: var(--navlinks-color);
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+
+/*----toggle class---*/
+
+.dropdown-content.drop {
+    display: block;
+}
+
+.dropdown-content {
+    width: 130px;
+    display: none;
+    position: absolute;
+    background-color: rgba(4, 9, 30, 0.5);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: left;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background: rgba(4, 9, 30, 1);
+    color: #fff;
+}
+
+#menu-icon {
+    color: var(--navlinks-color);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+.navbar li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #fff;
+    bottom: -4px;
+    left: 0;
+    position: absolute;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+.home {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.3))), url(images/background.jpg); */
+    background-image: -o-linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.3)), url(images/background.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.3)), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    /* -ms-grid-columns: (1fr)[2]; */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.text h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+.text span {
+    color: var(--navlinks-color);
+}
+
+.text p {
+    margin: 00.5rem 0 1rem;
+    color: var(--navlinks-color);
+}
+
+.appstor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.appstor img {
+    width: 100px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+
+/*----order form---*/
+
+.order-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 100px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 1.5rem;
+}
+
+.input-box {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1rem;
+    flex: 1 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.input-box span {
+    font-weight: 500;
+    color: var(--navlinks-color);
+}
+
+.input-box input {
+    padding: 7px;
+    outline: none;
+    border: none;
+    background: #fff;
+    color: #000;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.order-form form .submit-btn {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 7rem;
+    flex: 1 1 7rem;
+    padding: 10px 34px;
+    position: relative;
+    top: 10px;
+    border: none;
+    border-radius: 00.5rem;
+    background: rgba(4, 9, 30, 0.7);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.order-form form .submit-btn:hover {
+    background: rgba(4, 9, 30, 1.0);
+}
+
+
+/*---ride section---*/
+
+.heading {
+    text-align: center;
+}
+
+.heading span {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.heading h1 {
+    font-size: 2rem;
+}
+
+.ride-container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.ride-container .box {
+    text-align: center;
+    padding: 20px;
+}
+
+.ride-container .box .bx {
+    font-size: 34px;
+    padding: 10px;
+    background: #eeeff1;
+    border-radius: 0.5rem;
+    color: rgba(4, 9, 30, 1);
+    cursor: pointer;
+}
+
+.ride-container .box h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1.4rem 0 0.5rem;
+}
+
+.ride-container .box .bx:hover,
+.ride-container .box .bx .bxs-calendar-star {
+    background: rgba(4, 9, 30, 0.9);
+    color: #fff;
+}
+
+
+/*-------services-----*/
+
+.services-container {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.services-container .box {
+    padding: 10px;
+    border-radius: 1rem;
+    -webkit-box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+
+.services-container .box .box-img {
+    width: 100%;
+    height: 200px;
+}
+
+.services-container .box .box-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.services-container .box p {
+    width: 58px;
+    padding: 0 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem;
+}
+
+.services-container .box h3 {
+    font-weight: 500;
+}
+
+.services-container .box h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(4, 9, 30, 1);
+    margin: 0.2rem 0 0.5rem;
+}
+
+.services-container .box h2 span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.services-container .box .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    background: rgba(4, 9, 30, 0.8);
+    color: #fff;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.services-container .box .btn:hover {
+    background: rgba(4, 9, 30, 1.0);
+}
+
+
+/*------about section------*/
+
+.about-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1rem 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-text span {
+    font-weight: 500;
+    color: rgba(4, 9, 30, 1.0);
+    text-transform: uppercase;
+}
+
+.about-text p {
+    margin: 0.5rem 0 1.4rem;
+}
+
+.about-text .btn {
+    padding: 10px 20px;
+    background: rgba(4, 9, 30, 0.8);
+    color: #fff;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.about-text .btn:hover {
+    background: rgba(4, 9, 30, 1);
+}
+
+
+/*-----reviews section-----*/
+
+.reviews-container {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.review-img {
+    width: 70px;
+    height: 70px;
+}
+
+.review-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    border: 2px solid var(--main-color);
+}
+
+.reviews-container .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.6);
+    border-radius: 0.5rem;
+}
+
+.reviews-container .box h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.reviews-container .box p {
+    font-style: italic;
+}
+
+.reviews-container .box .stars .bx {
+    color: var(--main-color);
+}
+
+
+/*---newsletter----*/
+
+.news-letter {
+    /* background: -webkit-gradient(linear, left bottom, right top, from(rgba(4, 9, 30, 0.5)), to(rgba(4, 9, 30, 1))); */
+    background: -o-linear-gradient(bottom left, rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 1));
+    background: linear-gradient(to top right, rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 1));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.news-letter h2 {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.news-letter .box {
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 4px 8px;
+    width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.news-letter .box input {
+    border: none;
+    outline: none;
+}
+
+.news-letter .box .btn {
+    padding: 8px 20px;
+    background: rgba(4, 9, 30, 0.8);
+    color: #fff;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.news-letter .box .btn:hover {
+    background: rgba(4, 9, 30, 1);
+}
+
+.footer {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(4, 9, 30, 1);
+}
+
+.footer p {
+    color: #fff;
+}
+
+.social-links a {
+    color: #fff;
+    padding: 10px;
+    border-radius: 0.5rem;
+    font-size: 21px;
+}
+
+.social-links a .bx:hover {
+    color: rgb(29, 70, 252);
+}
+
+.social-links a .bxl-instagram:hover {
+    color: rgb(240, 36, 0);
+}
+
+
+/*---honda city----*/
+
+.city-home {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.3)), url(images/citybackground.png);
+}
+
+
+/*-------honda brv-------*/
+
+.brv-home {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.3)), url(images/brv-background.jpg);
+}
+
+
+/*-----honda crv------*/
+
+.crv-home {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.3)), url(images/crvbackground.jpg);
+}
+
+
+/*---honda vezel----*/
+
+.vezel-home {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.3)), url(https://cdn.carsandcoffee.com.sg/web/brandnew/main/lChMmZKlvJmwlWFZ5Kep/honda-vezel-cars-and-coffee-singapore-01_1440x1440.jpg?alt=media&token=8d9dbd07-1ad2-4b42-bc30-937b1928995a);
+}
+
+
+/*-----responsive------*/
+
+@media(max-width: 1016px) {
+    header {
+        padding: 18px 40px;
+    }
+    section {
+        padding: 50px 40px;
+    }
+}
+
+@media(max-width: 900px) {
+    header {
+        padding: 5px 15px;
+    }
+    section {
+        padding: 10px 20px;
+    }
+}
+
+@media(max-width: 855px) {
+    .order-form form {
+        bottom: 0.2rem;
+        left: 40px;
+    }
+    .navbar ul li a {
+        padding: 10px;
+    }
+    .text h1 {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 755px) {
+    .text {
+        margin-top: 20%;
+    }
+    .text h1 {
+        font-size: 2.5rem;
+    }
+    .home {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .home {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.3)), url(https://w7.pngwing.com/pngs/742/873/png-transparent-2018-honda-civic-car-honda-civic-type-r-2016-honda-civic-honda-compact-car-glass-sedan.png);
+    }
+    .city-home {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.3)), url(https://wallpaperaccess.com/full/2039658.jpg);
+        background-size: cover;
+    }
+    .brv-home {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.3)), url(https://imgd.aeplcdn.com/0x0/n/arojora_1420578.jpg);
+    }
+    .crv-home {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.3)), url(https://www.honda-indonesia.com/uploads/images/trendsetters/cr_v_depan__1615894734907__1618162401138.png);
+    }
+    .order-form form {
+        position: unset;
+    }
+    #menu-icon,
+    #x-icon {
+        display: initial;
+        font-size: 2.5rem;
+    }
+    .navbar.active {
+        width: 100%;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 0;
+        height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background: rgba(4, 9, 30, 0.9);
+        -webkit-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        transition: 0.2s ease;
+        overflow-x: hidden;
+    }
+    .navbar li {
+        padding: 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .navbar li a {
+        border-left: 1px solid #fff;
+        width: 100%;
+    }
+    .navbar li a::after {
+        display: none;
+    }
+    .dropdown {
+        float: left;
+    }
+    .dropdown-content {
+        position: relative;
+    }
+    .dropdown-content a {
+        display: inline-block;
+    }
+    .heading span {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    .heading h1 {
+        font-size: 1.3rem;
+    }
+    .about-container {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about-img {
+        padding: 1rem;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    .header {
+        position: fixed;
+    }
+}
+
+@media(max-width: 755px) {
+    .services-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    }
+}
+
+@media(max-width: 555px) {
+    .footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .news-letter .box {
+        width: 295px;
+    }
+    .logo img {
+        width: 30px;
+    }
+    .header-btn .sign-up {
+        font-size: 14px;
+        font-weight: 400;
+        margin-right: 20px;
+    }
+    .text h1 {
+        font-size: 2rem;
+    }
+    .order-form {
+        padding-top: 3rem;
+    }
+    .services-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    }
+    .header {
+        position: fixed;
+        padding: 8px 40px;
+        width: auto;
+    }
+}
+
+@media(max-width: 355px) {
+    .section {
+        padding: 50px 14px;
+    }
+    header {
+        padding: 6px 14px;
+    }
+    .header {
+        position: fixed;
+    }
+}

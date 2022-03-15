@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent-a-Car honda-brv</title>
+    <link rel="stylesheet" href="style.css">
+    <!----boxicon css---->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+
+        <div class="bx bx-menu" id="menu-icon" onclick="dropeFunction()"></div>
+        <!------navbar---->
+        <div class="navbar">
+            <ul>
+                <li><a href="#home" id="nava">HOME</a></li>
+                <li><a href="#rides" id="nava">RIDES</a></li>
+                <li><a href="#services" id="nava">SERVICES</a></li>
+                <li><a href="#about" id="nava">ABOUT</a></li>
+                <li><a href="#reviews" id="nava">REVIEWS</a></li>
+            </ul>
+            <div class="dropdown">
+                <li class="drop-btn"><a href="#">Collection <i class="bx bx-chevron-down-circle" id="down" onclick="dropFunction()"></i><i class="bx bx-chevron-up-circle" id="up" onclick="closeFunction()" style="display: none;"></i> </a></li>
+                <div class="dropdown-content" id="dropdowncontent">
+                    <ul>
+                        <a href="index.html">Honda Civic</a>
+                        <a href="hondacity-index .html">Honda City</a>
+                        <a href="index-honda-brv - Copy.html">Honda BRV</a>
+                        <a href="crv -index.html">Honda CRV</a>
+                        <a href="vezel-index.html">Honda Vizel</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-btn">
+            <a href="#" class="sign-up"><i class="bx bx-user" style="font-size: 24px;"></i>Sign In</a>
+        </div>
+    </header>
+    <!-----Home---->
+    <section class="brv-home home" id="home">
+        <div class="text">
+            <h1><span>Looking</span> for <br>Rent a car</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit <br> Ratione, laborum eum?</p>
+            <div class="appstor">
+                <img src="images/appstore.png" alt="">
+                <img src="images/google-play.jpg" alt="">
+            </div>
+        </div>
+        <div class="order-form">
+            <form action="">
+                <div class="input-box">
+                    <span>Location</span>
+                    <input type="search" name="" id="" placeholder="Search Place">
+                </div>
+                <div class="input-box">
+                    <span>Pic-Up Date</span>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="input-box">
+                    <span>Return Date</span>
+                    <input type="date" name="" id="">
+                </div>
+                <input type="submit" name="" id="" value="Submit" class="submit-btn">
+            </form>
+        </div>
+    </section>
+
+    <!-----ride section----->
+    <section class="ride" id="rides">
+        <div class="heading">
+            <span>How Its Work</span>
+            <h1>Rent With 3 Easy Steps</h1>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <i class="bx bx-map"></i>
+                <h2>Choose A Location</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, autem consectetur? Repudiandae provident consequuntur quaerat.</p>
+            </div>
+            <div class="box">
+                <i class="bx bx-calendar-check"></i>
+                <h2>Pic-Up Date</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, autem consectetur? Repudiandae provident consequuntur quaerat.</p>
+            </div>
+            <div class="box">
+                <i class="bx bxs-calendar-star"></i>
+                <h2>Book A Car</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, autem consectetur? Repudiandae provident consequuntur quaerat.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!----services------>
+
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Best Services</span>
+            <h1>Explore Out top Deals <br> From Top Rated Dealers</h1>
+        </div>
+        <div class="section-img">
+            <img src="images/brv-background.jpg" style="width: 100%;" alt="">
+        </div>
+        <div class="services-container">
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://travelandtours.pk/wp-content/uploads/2020/05/brv.jpg" alt="">
+                </div>
+                <p>2019</p>
+                <h3>2019 Honda Brv</h3>
+                <h2>$58500 | $399 <span>/Month</span></h2>
+                <a href="#" class="btn">Book NOw</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/brv2.jpg" alt="">
+                </div>
+                <p>2019</p>
+                <h3>2019 Honda Brv</h3>
+                <h2>$58500 | $399 <span>/Month</span></h2>
+                <a href="#" class="btn">Book NOw</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://5.imimg.com/data5/OR/IE/MY-39258909/honda-brv-i-dtec-e-mt-car-500x500.png" alt="">
+                </div>
+                <p>2019</p>
+                <h3>2019 Honda Brv</h3>
+                <h2>$58500 | $399 <span>/Month</span></h2>
+                <a href="#" class="btn">Book NOw</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/brv4.jpg" alt="">
+                </div>
+                <p>2019</p>
+                <h3>2019 Honda Brv</h3>
+                <h2>$58500 | $399 <span>/Month</span></h2>
+                <a href="#" class="btn">Book NOw</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/brv5.jpg" alt="">
+                </div>
+                <p>2019</p>
+                <h3>2019 Honda Brv</h3>
+                <h2>$58500 | $399 <span>/Month</span></h2>
+                <a href="#" class="btn">Book NOw</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/brv6.jpg" alt="">
+                </div>
+                <p>2019</p>
+                <h3>2019 Honda Brv</h3>
+                <h2>$58500 | $399 <span>/Month</span></h2>
+                <a href="#" class="btn">Book NOw</a>
+            </div>
+        </div>
+    </section>
+
+    <!----about----->
+
+    <section class="about" id="about">
+        <div class="heading">
+            <span>About</span>
+            <h1>Best Customer Experience</h1>
+        </div>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="images/brv-background.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <span>About Us</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aspernatur dolor voluptate culpa fuga blanditiis placeat qui possimus quidem. Et corporis numquam, molestiae neque velit necessitatibus. Est dolorum, ipsa odio corporis fuga
+                    amet soluta.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas asperiores incidunt ducimus doloremque corporis et minima ipsum.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>>
+
+    <!------reviews----->
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <span>Reviews</span>
+            <h1>What Our Customers Say</h1>
+        </div>
+        <div class="reviews-container">
+            <div class="box">
+                <div class="review-img">
+                    <img src="images/user1.jpg" alt="">
+                </div>
+                <h2>Miss Julie</h2>
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga, harum voluptas aliquid ipsam illo amet delectus nulla!</p>
+            </div>
+
+            <div class="box">
+                <div class="review-img">
+                    <img src="images/user2.jpg" alt="">
+                </div>
+                <h2>Mrs David</h2>
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga, harum voluptas aliquid ipsam illo amet delectus nulla!</p>
+            </div>
+
+            <div class="box">
+                <div class="review-img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="">
+                </div>
+                <h2>Mr Jhone</h2>
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga, harum voluptas aliquid ipsam illo amet delectus nulla!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-----news letter------>
+    <section class="news-letter">
+        <h2>Subscribe To Newsletter</h2>
+        <div class="box">
+            <input type="text" id="email" placeholder="Enter Your Email..">
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>&#169; Pk.Devolpers</p>
+        <div class="social-links">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-skype"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </div>
+    <!------scrolar revel-------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!---link to js--->
+    <script src="main.js"></script>
+</body>
+
+</html>
